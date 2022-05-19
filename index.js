@@ -28,7 +28,7 @@ Clouds: <b>${clouds.all} %</b>
 );
 
 // Created instance of TelegramBot
- var port = process.env.PORT || 443,
+ var port = process.env.PORT || 8443,
     host = '0.0.0.0';
 const bot = new TelegramBot(token, {
   polling: true,
