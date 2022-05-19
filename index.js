@@ -28,8 +28,11 @@ Clouds: <b>${clouds.all} %</b>
 );
 
 // Created instance of TelegramBot
+ var port = process.env.PORT || 443,
+    host = '0.0.0.0';
 const bot = new TelegramBot(token, {
-  polling: true
+  polling: true,
+  webHook: { port : port, host : host }
 });
 
 // Function that gets the weather by the city name
