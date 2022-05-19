@@ -4,8 +4,7 @@
   "description": "Wwalks Telegram Bot",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run build",
-    "start": "node index.js",
+    "start": "node index.js -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
