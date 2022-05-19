@@ -6,7 +6,7 @@ const token = '5083899624:AAFp6gLejNB8oVtGGDkkWEhArn1SjRXnwN0';
 
 //OpenWeatherMap API key
 const appID = 'b7643363649c15cc7d7f333a32424bf5';
-const botID= 'chic-capsule-sg';
+const botID= 'stellar-bali-fromone';
 
 // OpenWeatherMap endpoint for getting weather by city name
 
@@ -38,8 +38,8 @@ const bot = new TelegramBot(token, {
 // Function that gets the weather by the city name
 const getResponse = (chatId, fromMsg) => {
     
-   // const botUrl = `https://two.samuraai.cc/api/v1/bots/${botID}/converse/${chatId}`;
-    const botUrl = ` https://one.samuraai.cc/api/v1/bots/stellar-bali/converse/843306190`;
+    const botUrl = `https://two.samuraai.cc/api/v1/bots/${botID}/converse/${chatId}`;
+    // const botUrl = ` https://one.samuraai.cc/api/v1/bots/stellar-bali/converse/843306190`;
     console.log ("boturl"+botUrl);
     const endpoint = botUrl;
     const msg = `${fromMsg}`;
